@@ -1,0 +1,179 @@
+.holebody {
+  background-color: cornflowerblue;
+}
+.header {
+  background-color: brown;
+  height: 120px;
+  width: 100%;
+}
+.srmphoto {
+  height: 134px;
+  width: 255px;
+  padding-left: 46px;
+}
+
+.srmheader {
+  left: 600px;
+}
+.search {
+  border-radius: 10px;
+  text-align: right;
+  padding: 2px 20px 2px 20px;
+}
+.costumnav {
+  list-style: none;
+  display: contents;
+  font-size: 25px;
+}
+.department {
+  text-align: center;
+  color: aliceblue;
+  background-color: indigo;
+  margin-top: 20px;
+  margin-left: 270px;
+  margin-right: 270px;
+  padding: 13px;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+.about {
+  height: 50px;
+  width: 150px;
+  background-color: black;
+  padding: 10px 36px;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: cornsilk;
+  border-radius: 200px;
+}
+.chinna {
+  padding: 35px 50px;
+  border: 3px solid;
+  border-radius: 30px;
+  margin: 25px;
+  background-color: darkkhaki;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.list {
+  height: 60px;
+  width: 50%;
+  background-color: indigo;
+  margin-left: 300px;
+  text-align: center;
+  padding-top: 10px;
+  color: floralwhite;
+  font-family: emoji;
+  font-size: 36px;
+}
+.row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ecphoto {
+  height: 135px;
+}
+.mechphoto {
+  height: 159px;
+}
+.civilphoto {
+  height: 240px;
+}
+.elephoto {
+  height: 183px;
+}
+.chemicalphoto {
+  height: 183px;
+}
+.abc {
+  margin-top: 60px;
+}
+.events {
+  background-color: bisque;
+  height: 60px;
+  width: 50%;
+  margin-left: 340px;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 10px;
+  font-family: serif;
+  font-size: 40px;
+  color: crimson;
+}
+.art {
+  height: 50px;
+  width: 250px;
+  background-color: black;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding: 8px 40px;
+  border-radius: 47px;
+  color: whitesmoke;
+  font-family: math;
+}
+.artset {
+  margin-top: 20px;
+  height: 250px;
+  width: 350px;
+}
+.def {
+  height: 300px;
+  width: 95%;
+  margin-left: 24px;
+  background-color: white;
+  padding: 30px;
+  border: 2px solid;
+  border-radius: 49px;
+}
+.set {
+  font-family: math;
+  margin-left: 15px;
+  color: deeppink;
+  font-size: 30px;
+}
+.sports {
+  border: 1px solid;
+  height: 50px;
+  width: 250px;
+  background-color: mediumvioletred;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding: 8px 40px;
+  border-radius: 47px;
+  color: black;
+  font-family: math;
+}
+.game {
+  color: darkblue;
+  font-family: auto;
+  height: 40px;
+  width: 140px;
+  background-color: darkcyan;
+  text-align: center;
+  padding: 7px;
+  margin-left: 24px;
+  border-radius: 15px;
+}
+.kabaddiphoto {
+  height: 190px;
+}
+.down {
+  height: 60px;
+  width: 100%;
+  margin-top: 25px;
+  background-color: gold;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+.college {
+  height: 50px;
+  width: 60px;
+  color: black;
+}
+.thanks {
+  padding-left: 220px;
+}
