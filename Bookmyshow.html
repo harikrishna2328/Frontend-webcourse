@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book my show</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .holebody {
+        background-color: floralwhite;
+      }
+      .navedit {
+        height: 100px;
+    width: 100%;
+    background-color: darkseagreen;
+    margin-top: 20px;
+}
+
+      .bookimg {
+        height: 70px;
+    width: 240px;
+    margin-top: 10px;
+    margin-left: 20px;
+      }
+      .signin{
+        width: 140px;
+    background-color: cornsilk;
+    border-radius: 7px;
+    margin-left: 15px;
+}
+.signin:hover{
+  background-color: deeppink;
+}
+      .imgset {
+        height: 45vh;
+        width: 100%;
+      }
+      .abc{
+        height: 40px;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+      }
+      .hari{
+        width: 85%;
+    margin-top: 50px;
+      }
+    .webseries{
+     height: 50px;
+     width: 15%;
+     background-color: firebrick;
+     margin-top: 30px;
+     margin-left: 50px;
+     border-radius: 10px;
+     text-align: center;
+     font-family: sans-serif;
+     padding-top: 8px;
+    }
+    </style>
+  </head>
+  <body class="holebody">
+    <div class="navedit">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <img class="bookimg" src="https://getlogo.net/wp-content/uploads/2020/04/bookmyshow-logo-vector.png" alt="BOOK MY SHOW"/>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+            <button class="signin" type="sign in"> SIGN IN </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="abc">
+        <a class="navbar-brand" href="#">Movie</a>
+        <a class="navbar-brand" href="#">Stream</a>
+        <a class="navbar-brand" href="#">Events</a>
+        <a class="navbar-brand" href="#">Plays</a>
+        <a class="navbar-brand" href="#">Sports</a>
+        <a class="navbar-brand" href="#">Activities</a>
+        
+      </div>
+    </nav>
+    <div class="container">
+     <div id="listofmovies" class="row"></div>
+     <div id="listofwebseries" class="row"></div>
+    </div>
+
+    <script>
+      const movielist = [
+        {
+          name: "Salar",
+          jonar: "Action/Elivation",
+          img: "https://upload.wikimedia.org/wikipedia/en/a/a6/Salaar_Part_1_%E2%80%93_Ceasefire.jpg",
+        },
+        {
+          name: "Pushpa",
+          jonar: "Action/Triller",
+          img: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4zLzEwICA0NThLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00356724-dynwtezcja-portrait.jpg",
+        },
+        {
+          name: "Sankrantiki",
+          jonar: "Comedy/Family",
+          img: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS8xMCAgNzEuN0sgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00418119-urxwxzudkv-portrait.jpg",
+        },
+
+        {
+          name: "Daaku maharaj",
+          jonar: "Action",
+          img: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC44LzEwICA2Mi40SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00419964-lkjnsvyufh-portrait.jpg",
+        },
+
+        {
+          name: "Devara",
+          jonar: "ACtion/Drama",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyGYO0CUgrw3NBJnGbliu9OH-5O-g-zF3U8Q&s",
+        },
+
+        {
+          name: "Game Changer",
+          jonar: "Political/Drama",
+          img: "https://m.media-amazon.com/images/M/MV5BNTcwNDFkM2EtOWRjZS00Y2VjLTg0ZGEtMzJmN2ZlZjVkYjU1XkEyXkFqcGc@._V1_.jpg",
+        },
+        {
+          name: "Amaran",
+          jonar:"Biopic/love",
+          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKhUJjft0pXw3qi5OdYEKDTNHrQw_ddPeAhg&s"
+        },
+        {
+          name: "Animal",
+          jonar:"Action/Triller",
+          img:"https://m.media-amazon.com/images/M/MV5BZThmNDg1NjUtNWJhMC00YjA3LWJiMjItNmM4ZDQ5ZGZiN2Y2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        }
+        
+      ];
+      const weblist = [
+        {
+          name:"Agra Affair",
+          language:"Hindhi",
+          img:"https://m.media-amazon.com/images/M/MV5BZDEyNWFjMDctY2ExZi00OTA4LTljMjAtMjFmYTQ1ZWJmZjdmXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        name:"The Twisted Doll",
+        language:"English",
+     img:"https://m.media-amazon.com/images/M/MV5BYWQyMTA1NjgtMmE1Ny00NWJmLTk0MDEtYjZmYmU2ZjkxNjNiXkEyXkFqcGc@._V1_.jpg",
+      },
+      {
+        name:"Manorathangal",
+        language:"Malayalam",
+     img:"https://m.media-amazon.com/images/M/MV5BMTAwOGU5ZjgtYjMzZS00Nzc5LWI5YTktZGI2ZTBjYTc2NTM1XkEyXkFqcGc@._V1_.jpg",
+      },
+
+    ];
+      const rendermovielist = movielist.map((ele) => {
+        return `
+  
+          <div class="col-3">
+            <div class="card hari">
+          <img class="imgset" src="${ele.img}" class="card-img-top" alt="..."> 
+        <div class="card-body">
+          <h5 class="card-title">${ele.name}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">${ele.jonar}</h6>
+        </div>
+      </div>
+     </div>
+              `;
+      });
+const renderweblist = weblist.map((chinna) => {
+       return `
+<div class="col-3">
+            <div class="card hari">
+          <img class="imgset" src="${chinna.img}" class="card-img-top" alt="..."> 
+        <div class="card-body">
+          <h5 class="card-title">${chinna.name}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">${chinna.language}</h6>
+        </div>
+      </div>
+     </div>
+                 `;
+    });
+    
+      listofmovies.innerHTML = rendermovielist.join("");
+      const rendermovielistInHTML = document.getElementById("listofmovies");
+     
+listofweblist.innerHTML = renderweblist.join("");
+const renderweblistInHTML = document.getElementById("listofweblist")
+
+    </script>
+
+<h3 class="webseries"> Web Series </h3>
+
+  </body>
+</html>
